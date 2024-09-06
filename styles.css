@@ -10,6 +10,8 @@ body, html {
 .create-account-body {
     display: flex;
     flex-direction: row;
+
+    height: 100%;
 }
 
 .visual-aside {
