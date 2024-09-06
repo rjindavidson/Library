@@ -1,5 +1,9 @@
-.header-note {
+.create-account-body {
     display: flex;
-    align-items: center;
-    justify-content: center;
+    flex-direction: row;
+}
+
+.visual-aside {
+    width: 33%;
+    background: #fff url(images/background-img.jpg);
 }

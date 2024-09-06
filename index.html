@@ -1,149 +1,51 @@
 <!DOCTYPE html>
-<html lang="en-US">
+<html lang="en">
 
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width">
-    <title>Postcard example</title>
-    <style>
-        @font-face {
-            font-family: "handwriting";
-            src:
-                url("fonts/journal-webfont.woff2") format("woff2"),
-                url("fonts/journal-webfont.woff") format("woff");
-            font-weight: normal;
-            font-style: normal;
-        }
-
-        @font-face {
-            font-family: "typewriter";
-            src:
-                url("fonts/mom-webfont.woff2") format("woff2"),
-                url("fonts/mom-webfont.woff") format("woff");
-            font-weight: normal;
-            font-style: normal;
-        }
-
-        body {
-            font: 1.3rem sans-serif;
-            padding: 0.5rem;
-            margin: 0;
-            background: #222;
-        }
-
-        form {
-            position: relative;
-            width: 740px;
-            height: 498px;
-            margin: 0 auto;
-            padding: 1rem;
-            box-sizing: border-box;
-            background: #fff url(background.jpg);
-
-            display: grid;
-            gap: 20px;
-            grid-template-columns: repeat(2, 1fr);
-            grid-template-rows: 10rem 1rem 1rem 1rem;
-        }
-
-        h1 {
-            font:
-                1em "typewriter",
-                monospace;
-            align-self: end;
-        }
-
-        #message {
-            grid-row: 1 / 5;
-        }
-
-        #from,
-        #reply {
-            display: flex;
-        }
-
-        label {
-            font: 0.8rem "typewriter", sans-serif;
-        }
-
-        input,
-        textarea {
-            font:
-                1.4em/1.5em "handwriting",
-                cursive,
-                sans-serif;
-            border: none;
-            padding: 0 10px;
-            margin: 0;
-            width: 80%;
-            background: none;
-        }
-
-        input:focus,
-        textarea:focus {
-            background: rgb(0 0 0 / 10%);
-            border-radius: 5px;
-        }
-
-        textarea {
-            display: block;
-
-            padding: 10px;
-            margin: 10px 0 0 -10px;
-            width: 100%;
-            height: 90%;
-
-            border-right: 1px solid;
-
-            /* resize  : none; */
-            overflow: auto;
-        }
-
-        button {
-            padding: 5px;
-            font: bold 0.6em sans-serif;
-            border: 2px solid #333;
-            border-radius: 5px;
-            background: none;
-            cursor: pointer;
-            transform: rotate(-1.5deg);
-        }
-
-        button:after {
-            content: " >>>";
-        }
-
-        button:hover,
-        button:focus {
-            background: #000;
-            color: #fff;
-        }
-    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="styles.css" rel="stylesheet" />
+    <title>Document</title>
 </head>
 
 <body>
-    <form>
-        <h1>to: Mozilla</h1>
-
-        <div id="from">
-            <label for="name">from:</label>
-            <input type="text" id="name" name="user_name" />
+    <div class="create-account-body">
+        <div class="visual-aside">
+            <h1>Odin</h1>
         </div>
+        <div>
+            <h1>
+                This is not a real online service! You know you need something like this in your
+                life to help you realize your deepest dreams. Sign up <em>now</em> to get started!
+            </h1>
+            <h2>
+                You <em>know</em> you want to.
+            </h2>
+            <form action="" method="">
+                <div>
+                    <h1>Let's do this!</h1>
+                    <label for="first-name">First Name</label>
+                    <input type="text" id="first-name" name="first-name" />
 
-        <div id="reply">
-            <label for="mail">reply:</label>
-            <input type="email" id="mail" name="user_email" />
-        </div>
+                    <label for="last-name">Last Name</label>
+                    <input type="text" id="last-name" name="last-name" />
 
-        <div id="message">
-            <label for="msg">Your message:</label>
-            <textarea id="msg" name="user_message"></textarea>
-        </div>
+                    <label for="e-mail">Email</label>
+                    <input type="email" id="e-mail" name="e-mail" />
 
-        <div class="button">
-            <button type="submit">Send your message >>></button>
+                    <label for="phone-number">Phone Number</label>
+                    <input type="number" id="phone-number" name="phone-number" />
+
+                    <label for="password">Password</label>
+                    <input type="password" id="password" name="password" />
+                    
+                    <label for="confirm-password">Confirm Password</label>
+                    <input type="password" id="confirm-password" name="confirm-password" />
+                </div>
+                <button type="submit">Create Account</button>
+            </form>
         </div>
-    </form>
+    </div>
 </body>
 
 </html>
