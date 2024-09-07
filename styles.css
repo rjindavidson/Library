@@ -15,7 +15,6 @@ body, html {
 .create-account-body {
     display: flex;
     flex-direction: row;
-
     height: 100%;
 }
 
@@ -42,11 +41,16 @@ body, html {
     justify-content: center;
 }
 
+.shrink-image {
+    height: 96px;
+    width: auto;
+}
+
 .visual-aside {
     width: 33%;
     background: #fff url(images/background-img.jpg);
 }
 
 .web-header {
-    font: 2rem "norse", sans-serif;
+    font: 6rem "norse", sans-serif;
 }
