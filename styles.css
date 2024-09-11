@@ -23,7 +23,7 @@ body, html {
 }
 
 .logo {
-    font: 6rem "norse", sans-serif;
+    font: "norse", sans-serif;
     color: #fff;
     display: flex;
     align-items: center;
@@ -35,15 +35,16 @@ body, html {
 .main-content {
     margin-left: 36px;
     margin-right: 36px;
+    margin-top: 128px;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    justify-content: center;
 }
 
-.shrink-image {
-    height: 96px;
+.shrink {
+    height: 6rem;
 }
+
 
 .visual-aside {
     width: 33%;
