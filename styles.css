@@ -24,6 +24,8 @@ body, html {
 
 .logo {
     font: 4rem "norse", sans-serif;
+    height: 150px;
+    background: rgba(1, 1, 1, .3);
     color: #fff;
     display: flex;
     align-items: center;
@@ -47,6 +49,6 @@ body, html {
 
 
 .visual-aside {
-    width: 33%;
+    width: 66%;
     background: #fff url(images/background-img.jpg);
 }
