@@ -16,7 +16,11 @@ body, html {
     display: flex;
     flex-direction: row;
     height: 100%;
-    font: sans-serif;
+    font-family: sans-serif;
+}
+
+.form-row {
+    float: left;
 }
 
 .form-styles {

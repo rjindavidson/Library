@@ -24,34 +24,43 @@
             <h2>
                 You <em>know</em> you want to.
             </h2>
-            <form action="" method="">
+            <form action="" method="" style="margin-top: 48px">
                     <div class="form-styles">
-                        <h1>Let's do this!</h1>
+                        <p style="margin-bottom: 16px; margin-top: 0; font-size: 2rem; font-weight: bold;">Let's do this!</p>
                         
                         <div>
-                            <div>
-                                <label for="first-name">First Name</label>
-                                <input type="text" id="first-name" name="first-name" required/>
+                            <section>
+                                <div class="form-row">
+                                    <label for="first-name">First Name</label>
+                                    <input type="text" id="first-name" name="first-name" required/>
+                                </div>
+                                <div class="form-row" style="margin-right: 20px;">
+                                    <label for="last-name">Last Name</label>
+                                    <input type="text" id="last-name" name="last-name" required/>
+                                </div>
+                            </section>
 
-                                <label for="last-name">Last Name</label>
-                                <input type="text" id="last-name" name="last-name" required/>
-                            </div>
+                            <section>
+                                <div class="form-row">
+                                    <label for="e-mail">Email</label>
+                                    <input type="email" id="e-mail" name="e-mail" required/>
+                                </div>
+                                <div class="form-row" style="margin-right: 20px;">
+                                    <label for="phone-number">Phone Number</label>
+                                    <input type="tel" id="phone-number" name="phone-number" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required/>
+                                </div>
+                            </section>
 
-                            <div>
-                                <label for="e-mail">Email</label>
-                                <input type="email" id="e-mail" name="e-mail" required/>
-
-                                <label for="phone-number">Phone Number</label>
-                                <input type="tel" id="phone-number" name="phone-number" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required/>
-                            </div>
-
-                            <div>
-                                <label for="password">Password</label>
-                                <input type="password" id="password" name="password" required/>
-
-                                <label for="confirm-password">Confirm Password</label>
-                                <input type="password" id="confirm-password" name="confirm-password" required/>
-                            </div>
+                            <section>
+                                <div class="form-row">
+                                    <label for="password">Password</label>
+                                    <input type="password" id="password" name="password" required/>
+                                </div>
+                                <div class="form-row" style="margin-right: 20px;">
+                                    <label for="confirm-password">Confirm Password</label>
+                                    <input type="password" id="confirm-password" name="confirm-password" required/>
+                                </div>
+                            </section>
 
                         </div>
                     </div>
