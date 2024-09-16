@@ -7,8 +7,13 @@
     font-style: normal;
 }
 
-body, html {
+* {
     margin: 0;
+    padding: 0;
+    font-size: 1rem;
+}
+
+body, html {
     height: 100%;
 }
 
@@ -23,8 +28,9 @@ body, html {
     font-family: sans-serif;
 }
 
-.form-row {
-    float: left;
+.form-section {
+    display: flex;
+    width: 75%;
 }
 
 .form-styles {
