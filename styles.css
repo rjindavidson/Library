@@ -1,72 +1,77 @@
-body {
-    height: 100%;
+.body {
     margin: 0;
-    padding: 0;
+    background-color: rgb(240, 240, 240);
+    font-family: 'Courier New', Courier, monospace;
 }
 
-.announcements-area {
-    grid-row: 2 / 9;
-    grid-column: 8 / 9;
+button, input {
+    cursor: pointer;
 }
 
-.card-area {
-    grid-row: 2 / 9;
-    grid-column: 2 / 8;
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0px -2px 8px 4px black;
+    height: 100px;
 }
 
-.card-grid {
+
+/* Main content */
+.add-button {
+    border: none;
+    padding: 8px;
+    background: rgb(240, 240, 240);
+    border-radius: 8px;
+    font-family: cursive;
+    font-size: 24px;
+}
+
+.add-button:hover {
+    filter: brightness(90%);
+}
+
+.book-card {
+    display: flex;
+    flex-direction: column;
+    border: black 2px solid;
+    border-radius: 8px;
+    background-color: aliceblue;
+}
+
+.book-card-buttons {
+    display: flex;
+    margin: 16px 0;
+    justify-content: space-evenly;
+}
+
+.book-grid {
     display: grid;
-    background-color: teal;
-    height: 100%;
-    grid-template: repeat(3, 1fr) / repeat(2, 0.6fr);
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    margin-top: 32px;
+    gap: 32px;
+}
+
+.main {
+    text-align: center;
+    margin: 24px;
+}
+
+/* Modal content */
+.input {
+    border: none;
+    border-bottom: 1px solid black;
+}
+
+.modal {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     gap: 8px;
 }
 
-.grid-container {
-    display: grid;
-    height: 100%;
-    background-color: gray;
-    grid-template: repeat(8, 1fr) / repeat(8, 1fr)
-}
-
-.header-area {
-    grid-row: 1 / 2;
-    grid-column: 2 / 9;
-}
-
-.header-area-options {
+.read-book-bool {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin: 8px;
-}
-
-.header-area-profile-options {
-    display: flex;
-    align-items: center;
-}
-
-.header-area-profile-options > div {
-    margin: auto 4px;
-}
-
-.header-area-search {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin: 8px;
-}
-
-.side-menu {
-    grid-row: 1 / 9;
-    grid-column: 1 / 2;
-}
-
-.side-menu-options {
-    display: flex;
-    flex-direction: column;
-}
-
-.side-menu-options > div {
-    margin: 8px;
+    gap: 12px;
 }
