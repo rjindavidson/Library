@@ -12,46 +12,38 @@
         <h1>Library</h1>
     </header>
     <main class="main">
-        <button class="add-button">+ Add Book</button>
-        <div class="book-grid">
-            <div class="book-card">
-                <p>Way of Kings</p>
-                <p>Brandon Sanderson</p>
-                <p>Pages</p>
-                <div class="book-card-buttons">
-                    <button>Read</button>
-                    <button>Remove</button>
-                </div>
-            </div>
-        </div>
+        <button class="add-button" id="addBookButton">+ Add Book</button>
+        <div class="book-grid" id="bookGrid">
     </main>
-    <form class="modal" id="newBookForm">
-        <input
-            class="input"
-            type="text"
-            id="title"
-            placeholder="Title"
-            required
-        >
-        <input
-            class="input"
-            type="text"
-            id="author"
-            placeholder="Author"
-            required
-        >
-        <input
-            class="input"
-            type="number"
-            id="pages"
-            placeholder="# of Pages"
-            required
-        >
-        <div class="read-book-bool">
-            <label for="isRead">Finished book?</label>
-            <input class="input" type="checkbox" id="isRead">
-        </div>
-        <button type="submit">Add Book</button>
-    </form>
+    <dialog id="dialogForm">
+        <form class="modal" id="newBookForm">
+            <input
+                class="input"
+                type="text"
+                id="title"
+                placeholder="Title"
+                required
+            >
+            <input
+                class="input"
+                type="text"
+                id="author"
+                placeholder="Author"
+                required
+            >
+            <input
+                class="input"
+                type="number"
+                id="pages"
+                placeholder="# of Pages"
+                required
+            >
+            <div class="read-book-bool">
+                <label for="isRead">Finished book?</label>
+                <input class="input" type="checkbox" id="isRead" name="isRead">
+            </div>
+            <button type="submit">Add Book</button>
+        </form>
+    </dialog>
 </body>
 </html>
